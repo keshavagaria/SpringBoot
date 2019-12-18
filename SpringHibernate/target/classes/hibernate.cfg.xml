@@ -9,16 +9,16 @@
 <session-factory>
 
 <!-- Related to Hibernate Properties -->
-<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect </property>
+<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect </property>
 <property name="hibernate.show_sql">true </property>
 <property name="hibernate.hbm2ddl.auto">update</property>
 
 <!-- Related to connection to database  -->
 
-<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver </property>
-<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
-<property name="hibernate.connection.username">root </property>
-<property name="hibernate.connection.password">system </property>
+<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver </property>
+<property name="hibernate.connection.url">jdbc:oracle:thin:@20.20.20.193:1521:DMA</property>
+<property name="hibernate.connection.username">SYSTEM </property>
+<property name="hibernate.connection.password">welcome@123</property>
 
 <!-- Realted to hibernate mapping-->
 <mapping class="com.mobile.Employee"/>
